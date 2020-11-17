@@ -15,6 +15,7 @@
 		3B5088792560DDA100000A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B5088772560DDA100000A9E /* LaunchScreen.storyboard */; };
 		3B5088842560DDA100000A9E /* BookkeepingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5088832560DDA100000A9E /* BookkeepingTests.swift */; };
 		3B50888F2560DDA100000A9E /* BookkeepingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50888E2560DDA100000A9E /* BookkeepingUITests.swift */; };
+		3B5088AE2563B76B00000A9E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5088AD2563B76B00000A9E /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3B50888A2560DDA100000A9E /* BookkeepingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookkeepingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B50888E2560DDA100000A9E /* BookkeepingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookkeepingUITests.swift; sourceTree = "<group>"; };
 		3B5088902560DDA100000A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5088AD2563B76B00000A9E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,11 @@
 		3B50886B2560DDA000000A9E /* Bookkeeping */ = {
 			isa = PBXGroup;
 			children = (
+				3B5088AC2563B73C00000A9E /* Views */,
+				3B5088AB2563B72D00000A9E /* Models */,
+				3B50889F2563B3C600000A9E /* Controllers */,
 				3B50886C2560DDA000000A9E /* AppDelegate.swift */,
 				3B50886E2560DDA000000A9E /* SceneDelegate.swift */,
-				3B5088702560DDA000000A9E /* ViewController.swift */,
-				3B5088722560DDA000000A9E /* Main.storyboard */,
 				3B5088752560DDA100000A9E /* Assets.xcassets */,
 				3B5088772560DDA100000A9E /* LaunchScreen.storyboard */,
 				3B50887A2560DDA100000A9E /* Info.plist */,
@@ -126,6 +129,30 @@
 				3B5088902560DDA100000A9E /* Info.plist */,
 			);
 			path = BookkeepingUITests;
+			sourceTree = "<group>";
+		};
+		3B50889F2563B3C600000A9E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B5088702560DDA000000A9E /* ViewController.swift */,
+				3B5088AD2563B76B00000A9E /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B5088AB2563B72D00000A9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B5088AC2563B73C00000A9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B5088722560DDA000000A9E /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5088AE2563B76B00000A9E /* LoginViewController.swift in Sources */,
 				3B5088712560DDA000000A9E /* ViewController.swift in Sources */,
 				3B50886D2560DDA000000A9E /* AppDelegate.swift in Sources */,
 				3B50886F2560DDA000000A9E /* SceneDelegate.swift in Sources */,
@@ -437,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2XN2UFAKN;
 				INFOPLIST_FILE = Bookkeeping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2XN2UFAKN;
 				INFOPLIST_FILE = Bookkeeping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
